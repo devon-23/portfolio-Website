@@ -91,17 +91,15 @@
             <div class="track-details">
                 <span class="track-title">{{ songName }}</span>
                 <span class="track-artist">{{ artistName }}</span>
+                <div class="progress-bar">
+                    <div class="fill" :style="{width: Math.floor((songCount/(songLength / 1000)) * 100) + '%'}"></div>
+                </div>
+                <div class="time-container">
+                    <div class="time--current">{{countMin}}:{{(this.countSec < 10 ? '0' : '') + this.countSec}}</div>
+                    <div class="time--total">{{songMin}}:{{(this.songSec < 10 ? '0' : '') + this.songSec}}</div>
+                </div>
             </div>
-            <div class="progress-bar">
-                <div class="time--current">{{countMin}}:{{(this.countSec<10?'0':'') + this.countSec}}</div>
-                <div class="time--total">{{ songMin }}:{{ (this.songSec<10?'0':'') + this.songSec }}</div>
-                <div class="fill" :style="{width: Math.floor((songCount/(songLength/ 1000))*100) + '%'}"></div>
-              </div>
         </div>
-        <br>
-        <!-- <div> -->
-            
-        <!-- </div> -->
     </div>
     <script src="scripts.js"></script>
 </body>

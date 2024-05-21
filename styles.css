@@ -147,13 +147,13 @@ a:hover {
     color: white;
     width: 100%;
     max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .track-info {
     display: flex;
     align-items: center;
-    flex: 1;
+    width: 100%;
 }
 
 .album-cover {
@@ -166,6 +166,7 @@ a:hover {
 .track-details {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .track-title {
@@ -175,53 +176,34 @@ a:hover {
 .track-artist {
     font-size: 0.8em;
     color: #ccc;
-}
-
-.controls {
-    display: flex;
-    align-items: center;
+    margin-bottom: 10px; /* Space between artist name and progress bar */
 }
 
 .progress-bar {
     height: 5px;
-    width: 73%;
-    margin: 6% auto;
+    width: 100%;
     background: #cdd9c2;
     border-radius: 10px;
-    font-family: "Questrial", sans-serif;
-  }
-  
-  .fill {
+    position: relative;
+}
+
+.fill {
     background-color: #8BA989;
-    height: 0.3rem;
-    border-radius: 2px;
-  }
-  
-  .time--current, .time--total {
-    color: #8dba97;
-    font-size: 10px;
-    position: absolute;
-    margin-top: -2px;
-    
-  }
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.1s;
+}
 
-  .time--current {
-    padding: 10px 0px; /* Adjust padding as needed */
-  }
-
-  .time--total {
-    padding: 10px 390px; /* Adjust padding as needed */
-  }
-
-  
-  .time-container {
+.time-container {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 10px; /* Adjust as needed */
     width: 100%;
-    color: white; /* Adjust text color as needed */
+    margin-top: 5px; /* Space between progress bar and time indicators */
     font-size: 0.8em; /* Adjust font size as needed */
+}
+
+.time--current, .time--total {
+    color: #8dba97;
 }
 
 
