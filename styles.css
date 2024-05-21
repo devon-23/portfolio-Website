@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+    background-color: #e0f7e9; /* Soft green background */
+    color: #2b2b2b; /* Dark grey text */
+    font-family: 'Source Code Pro', monospace; /* Updated font family */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.terminal {
+    border: 1px solid #4caf50; /* Green border */
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Green shadow */
+    margin-bottom: 20px;
+    background-color: #f1f8f4; /* Light greenish background */
+}
+
+.full-width {
+    width: 100%;
+}
+
+.terminal-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.terminal-row .terminal {
+    width: 32%;
+}
+
+.header {
+    background-color: #388e3c; /* Dark green background */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .buttons {
+    display: flex;
+}
+
+.header .buttons span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.header .buttons .close {
+    background-color: #e57373; /* Light red for close button */
+}
+
+.header .buttons .minimize {
+    background-color: #ffb74d; /* Light orange for minimize button */
+}
+
+.header .buttons .maximize {
+    background-color: #81c784; /* Light green for maximize button */
+}
+
+.header .title {
+    color: #fff; /* White text */
+}
+
+.content {
+    padding: 20px;
+}
+
+h2 {
+    color: #388e3c; /* Dark green text */
+}
+
+a {
+    color: #388e3c; /* Dark green links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-image {
+    float: right;
+    margin: 0 0 1em 1em; /* Adjust as needed */
+    border-radius: 50%;
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+}
+
+.typewriter {
+    shape-margin: 1em; /* Adjust as needed */
+}
+
+.text-and-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
