@@ -134,3 +134,96 @@ a:hover {
 .flip-card-back {
     transform: rotateY(180deg); /* Start flipped */
 }
+
+/* music player */
+
+.music-player {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.album-cover {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.track-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-title {
+    font-weight: bold;
+}
+
+.track-artist {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 5px;
+    width: 73%;
+    margin: 6% auto;
+    background: #cdd9c2;
+    border-radius: 10px;
+    font-family: "Questrial", sans-serif;
+  }
+  
+  .fill {
+    background-color: #8BA989;
+    height: 0.3rem;
+    border-radius: 2px;
+  }
+  
+  .time--current, .time--total {
+    color: #8dba97;
+    font-size: 10px;
+    position: absolute;
+    margin-top: -2px;
+    
+  }
+
+  .time--current {
+    padding: 10px 0px; /* Adjust padding as needed */
+  }
+
+  .time--total {
+    padding: 10px 390px; /* Adjust padding as needed */
+  }
+
+  
+  .time-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    width: 100%;
+    color: white; /* Adjust text color as needed */
+    font-size: 0.8em; /* Adjust font size as needed */
+}
+
+
+  
+  

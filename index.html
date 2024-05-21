@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+    <script src="https://unpkg.com/vue@3.0.5"></script>
 </head>
 <body>
     <div class="container">
@@ -81,6 +82,26 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Music Player -->
+    <div id="app" class="music-player">
+        <div class="track-info">
+            <img :src="picture" alt="Album Cover" class="album-cover">
+            <div class="track-details">
+                <span class="track-title">{{ songName }}</span>
+                <span class="track-artist">{{ artistName }}</span>
+            </div>
+            <div class="progress-bar">
+                <div class="time--current">{{countMin}}:{{(this.countSec<10?'0':'') + this.countSec}}</div>
+                <div class="time--total">{{ songMin }}:{{ (this.songSec<10?'0':'') + this.songSec }}</div>
+                <div class="fill" :style="{width: Math.floor((songCount/(songLength/ 1000))*100) + '%'}"></div>
+              </div>
+        </div>
+        <br>
+        <!-- <div> -->
+            
+        <!-- </div> -->
     </div>
     <script src="scripts.js"></script>
 </body>
